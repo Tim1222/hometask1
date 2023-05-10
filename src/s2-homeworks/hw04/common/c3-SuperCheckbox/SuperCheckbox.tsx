@@ -31,6 +31,9 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         // ЕСЛИ(onChangeChecked ВООБЩЕ СУЩЕСТВУЕТ){
         //    ПЕРЕДАТЬ ЕМУ ИВЕНТ.ЧТО-ТО.ЧТО-ТО
         //}
+
+        onChangeChecked?.(e.currentTarget.checked)
+        onChange?.(e)
         // ЕСЛИ(onChange ВООБЩЕ СУЩЕСТВУЕТ){
         //    ПЕРЕДАТЬ ЕМУ ИВЕНТ
         //}
